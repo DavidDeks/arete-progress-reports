@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <?!= includeExternalFile('css'); ?>
+</head>
+
+<body>
+        <p>Dear <?= gymnast[k].contactName ?>,</p>
+
+        <p>This is a progress report for <?= gymnast[k].scores[2] ?> who is currently enrolled in a class at Arete Gymnastics. Your child's current coach is <?= gymnast[k].scores[1].trim() ?>. This progress report is intended to help you see how your child has progressed and what skills may need more work to advance to the next level.</p>
+        
+        <p>The following rubric is used to evaluate these skills:</p>
+        
+        <ul>
+            <li>Emerging: Still working to perform the skill alone</li>
+            <li>Proficient: Completes the skill inconsistently or with incorrect form</li>
+            <li>Mastery: Consistently completes the skill with correct form</li>
+        </ul>
+
+        <p>The following are your child's current results:</p>
+    <h1><?= gymnast[k].level.replace(/blue /gi, '').replace(/yellow /gi, ''); ?></h1>
+    <h2>Coach: <?= gymnast[k].scores[1] ?></h2>
+    <h2>Gymnast: <?= gymnast[k].scores[2] ?></h2>
+    <table>
+        <tr id="t01">
+            <td>Skill</td>
+            <td>Evaluation</td>
+        </tr>
+       <?!= gymnast[k].tableContent ?>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h4>Arete Gym Office</h4>
+        <p>Phone: +1.801.796.5437</p>
+        <a href="mailto:aretegymnastics01@gmail.com">Email</a>
+        |
+        <a href="http://www.aretegymnastics.com">Website</a>
+        |
+        <a href="https://goo.gl/maps/6Foie9SwiwbswUC87">Map</a>
+        <br>
+        <br>
+        <a href="https://www.facebook.com/Arete.Gym">
+            <img src="https://68ef2f69c7787d4078ac-7864ae55ba174c40683f10ab811d9167.ssl.cf1.rackcdn.com/facebook-icon_24x24.png"
+                alt="Facebook Icon" /></a>
+        <a href="https://www.instagram.com/aretegymnastics">
+            <img src="https://68ef2f69c7787d4078ac-7864ae55ba174c40683f10ab811d9167.ssl.cf1.rackcdn.com/instagram-icon_24x24.png"
+                alt="Instagram Icon" /></a>
+        <a href="https://twitter.com/AreteGymnastics">
+            <img src="https://68ef2f69c7787d4078ac-7864ae55ba174c40683f10ab811d9167.ssl.cf1.rackcdn.com/twitter-icon_24x24.png"
+                alt="Twitter Icon" /></a>
+    </div>
+    <br>
+</body>

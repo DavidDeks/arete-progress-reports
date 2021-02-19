@@ -1,0 +1,19 @@
+{
+  "timeZone": "America/Denver",
+  "dependencies": {
+    "libraries": [
+      {
+        "userSymbol": "SendProgressReports",
+        "libraryId": "1jZEsfDCo6s75RPziR8AsXTjkzxRBtSOzRI1oVF0v7ZNNAnQAKDYZQlJX",
+        "version": "2",
+        "developmentMode": true
+      }
+    ]
+  },
+  "webapp": {
+    "executeAs": "USER_DEPLOYING",
+    "access": "MYSELF"
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8"
+}
